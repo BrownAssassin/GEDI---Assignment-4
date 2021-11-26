@@ -9,6 +9,6 @@ public class PointCollect : MonoBehaviour
 
     private void OnGUI()
     {
-        GUI.Label(new Rect(100, 100, 500, 20), "Scroe: " + points);
+        GUI.Label(new Rect(100, 100, 500, 20), "Score: " + points);
     }
 }
