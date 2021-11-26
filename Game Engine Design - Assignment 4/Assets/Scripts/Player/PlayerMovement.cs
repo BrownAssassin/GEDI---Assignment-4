@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float jumpingPower = 16f;
     private bool isFacingRight = true;
     public Plugin plugin;
+    public PositionDLL positionDLL;
 
     void Start()
     {
@@ -55,9 +56,14 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("isFalling", false);
         }
 
+        // Plugin triggers
         if (Input.GetKeyDown(KeyCode.E))
         {
             plugin.Random();
+        }
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            positionDLL.SaveMCPosition();
         }
     }
 
