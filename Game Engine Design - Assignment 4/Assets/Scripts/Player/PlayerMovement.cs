@@ -36,6 +36,10 @@ public class PlayerMovement : MonoBehaviour
         if (horizontal != 0f)
         {
             animator.SetBool("isRunning", true);
+            if (animator.GetBool("isJumping") == false)
+            {
+                FindObjectOfType<AudioManager>().Play("Walk");
+            }
         }
         else
         {
@@ -45,6 +49,7 @@ public class PlayerMovement : MonoBehaviour
         if (rigidbody2D.velocity.y > 2)
         {
             animator.SetBool("isJumping", true);
+            FindObjectOfType<AudioManager>().Play("Jump");
         }
         else if (rigidbody2D.velocity.y < -2)
         {
@@ -103,6 +108,8 @@ public class PlayerMovement : MonoBehaviour
     {
         if(collision.gameObject.tag == "Coin")
         {
+            FindObjectOfType<AudioManager>().Play("Coin");
+            this.GetComponent<PointCollect>().points++;
             Destroy(collision.gameObject);
         }
     }

@@ -18,6 +18,7 @@ public class SpawnShuriken : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.LeftControl))
             {
                 ObjectPoolSpawn();
+                FindObjectOfType<AudioManager>().Play("Shoot");
             }
         }
     }

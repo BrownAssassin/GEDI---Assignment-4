@@ -8,6 +8,8 @@ public class Shuriken : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy")
         {
+            FindObjectOfType<AudioManager>().Play("EnemyDeath");
+            FindObjectOfType<PointCollect>().points++;
             BasicPool.Instance.AddToPool(gameObject);
             Destroy(collision.gameObject);
         }

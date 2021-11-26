@@ -48,6 +48,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -328,6 +329,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      BuildingBlocks Sliced (16x16)_1: 8139882867774310808
+      BuildingBlocks Sliced (16x16)_5: 3242569114827676698
+      BuildingBlocks Sliced (16x16)_2: 829531505962209182
+      BuildingBlocks Sliced (16x16)_4: -5617213628709562057
+      BuildingBlocks Sliced (16x16)_0: 725461207666237920
+      BuildingBlocks Sliced (16x16)_3: -8075812586269143079
+      BuildingBlocks Sliced (16x16)_7: 8698247631948923487
+      BuildingBlocks Sliced (16x16)_6: 6323476953430935150
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
