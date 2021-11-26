@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float speed = 8f;
     [SerializeField] private float jumpingPower = 16f;
     private bool isFacingRight = true;
+    public Plugin plugin;
 
     void Start()
     {
@@ -53,7 +54,13 @@ public class PlayerMovement : MonoBehaviour
         {
             animator.SetBool("isFalling", false);
         }
+
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            plugin.Random();
+        }
     }
+
 
     public void Move(InputAction.CallbackContext context)
     {

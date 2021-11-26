@@ -1,5 +1,5 @@
 {
-    "name": "Player",
+    "name": "PlayerInput",
     "maps": [
         {
             "name": "Player",
@@ -33,6 +33,14 @@
                     "name": "Jump",
                     "type": "Button",
                     "id": "55effd4d-9da4-4522-b540-1835ca40cfae",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Color",
+                    "type": "Button",
+                    "id": "7ab48efc-0826-4970-a2c1-94fd32053082",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
@@ -278,6 +286,17 @@
                     "processors": "",
                     "groups": "Keyboard&Mouse",
                     "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "afa4cf37-dd5c-444b-b049-c634a6a0d7ff",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Color",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
