@@ -1,6 +1,9 @@
-# GEDI---Assignment-4
+# GEDI3110 - Assignment 4
 
-Assignment 4 Unity Project Repo for INFR3110U (Game Engine Design & Implementation)
+---
+
+> ## INFR3110U - Game Engine Design and Implementation
+> ### Assignment 4
 
 ## Game Description
 
